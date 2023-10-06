@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="formulario.php">
+            <fieldset>
+                <legend>Ficha de la película</legend>
+                    <label for="title">Título</label>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="Director">Director</label>
+                    <input type="text" id="Director" name="Director"><br>
+                    <label for="fecha">Fecha de estreno:</label>
+                    <input type="date" id="fecha" name="fecha"><br>
+                    <label for="poster">Poster:</label>
+                    <input type="file" id="poster" name="poster"><br>
+                    
+                    <label for="ver">Versión:</label><br>
+                    <input type="radio" id="ver" name="ver">
+                    <label for="ver">IMAX</label>
+                    <input type="radio" id="ver" name="ver">
+                    <label for="ver">3D</label>
+                    <input type="radio" id="ver" name="ver">
+                    <label for="ver">Full HD</label><br>
+                    
+                    <label for="clas">Clasificación:</label><br>
+                    <input type="radio" id="clas" name="clas">
+                    <label for="clas">TP</label>
+                    <input type="radio" id="clas" name="clas">
+                    <label for="clas">+12</label>
+                    <input type="radio" id="clas" name="clas">
+                    <label for="clas">+15</label>
+                    <input type="radio" id="clas" name="clas">
+                    <label for="clas">+18</label>
+            </fieldset>
+            <fieldset>
+                <legend>Ficha de proyección</legend>
+                <label for="sala">Sala: </label>
+                    <input type="text" id="sala" name="sala"><br>
+                    <textarea rows="8" cols="60">Escribe una breve sinopsis</textarea><br>
+                    <select type="text" list="lista"><br>
+                        <option label="inglés" value="English">inglés</option>
+                        <option labrel="español" value="Español">español</option>
+                    </select><br>
+                    <label for="sesion">Sesión:</label>
+                    <input type="time" id="sesion"><br>
+                    <label for="d_proyeccion">Días de proyección:</label><br>
+                    <select multiple ame="d_proyeccion" id="d_proyeccion">
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miercoles">Miercoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sabado">Sabado</option>
+                        <option value="Domingo">Domingo</option>
+                      </select>
+                    <label for="fondo">Elige un color de fondo:</label>
+                    <input type="color" id="fondo"><br>
+                    <label for="publico">Puntuación del público:</label>
+                    <progress id="publico" value="80" max="100">80%</progress>
+            </fieldset>        
+        </form>
+    </body>
+</html>
