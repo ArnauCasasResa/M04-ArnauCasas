@@ -1,11 +1,21 @@
 <html>
     <head>
-
+        <title>Formulario</title>
+        <style>
+            h2{
+                color:blueviolet;
+                font-family:
+            }
+            body{
+                color: gray;
+                background-color: aquamarine;
+            }               
+        </style>
     </head>
     <body>
         <form action="formulario.php">
             <fieldset>
-                <legend>Ficha de la película</legend>
+                <legend><h2>Ficha de la película</h2></legend>
                     <label for="title">Título</label>
                     <input type="text" id="title" name="title"><br>
                     <label for="Director">Director</label>
@@ -34,7 +44,7 @@
                     <label for="clas">+18</label>
             </fieldset>
             <fieldset>
-                <legend>Ficha de proyección</legend>
+                <legend><h2>Ficha de proyección</h2></legend>
                 <label for="sala">Sala: </label>
                     <input type="text" id="sala" name="sala"><br>
                     <textarea rows="8" cols="60">Escribe una breve sinopsis</textarea><br>
